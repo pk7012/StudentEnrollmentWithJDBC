@@ -26,7 +26,7 @@ public class DbUtil {
 					String password = properties.getProperty("password");
 
 					Class.forName("com.mysql.jdbc.Driver").newInstance();
-					dbConnection = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentenrollment", "root", "");
+					dbConnection = DriverManager.getConnection("jdbc:mysql://127.25.25.16:3306/studentenrollment", "pk", "pk");
 					//dbConnection = DriverManager.getConnection(connectionUrl,userName, password);
 				}
 			} catch (Exception e) {
